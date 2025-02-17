@@ -89,8 +89,8 @@ function calculate() {
             ar: 0,
             gvn: 0       
         }
-    }
- 
+    };
+    
     let nzy = 0.985;
     let solid_avn = 0.8;
     let oil_avn = 1;
