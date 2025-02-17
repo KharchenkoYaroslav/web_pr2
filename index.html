@@ -14,7 +14,7 @@
         <h2>Калькулятор <button onclick="openModal('modal')">?</button></h2>
         <div class="input-box">
 
-            <form>
+            <div>
                 <label for="solid-fuel">Тверде паливо</label>
                 <select id="solid-fuel">
                     <option value="DGSH">Донецьке газове ГР</option>
@@ -24,9 +24,9 @@
                     <input id="solid-fuel-input" type="text" step="any" placeholder="0.0 т" min="0"
                         oninput="addSymbol(this)" autocomplete="off">
                 </span>
-            </form>
+            </div>
 
-            <form>
+            <div>
                 <label for="oil-fuel">Мазут</label>
                 <select id="oil-fuel">
                     <option value="HS-40">Високосірчистий 40</option>
@@ -40,9 +40,9 @@
                     <input id="oil-fuel-input" type="text" step="any" placeholder="0.0 т" min="0"
                         oninput="addSymbol(this)" autocomplete="off">
                 </span>
-            </form>
+            </div>
 
-            <form>
+            <div>
                 <label for="natural-gas">Природний газ</label>
                 <select id="natural-gas">
                     <option value="UU">Уренгой-Ужгород</option>
@@ -53,7 +53,7 @@
                     <input id="natural-gas-input" type="text" step="any" placeholder="0.0 м³" min="0"
                         oninput="addSymbol(this)" autocomplete="off">
                 </span>
-            </form>
+            </div>
         </div>
         <button onclick="calculate()">Порахувати</button>
         <div class="result-box hidden">

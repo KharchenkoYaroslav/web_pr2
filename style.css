@@ -94,7 +94,7 @@ button:active {
     font-weight: 550;
 }
 
-form {
+.input-box div {
     text-align: center;
     padding: 5px;
     width: 100%;
