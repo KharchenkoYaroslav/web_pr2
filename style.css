@@ -101,12 +101,19 @@ button:active {
 }
 
 input {
-    width: 90px;
     font-weight: normal;
     border-radius: 5px;
     height: 20px;
     border: none;
     font-style: bold;
+}
+
+.tones input{
+    width:85px;
+}
+
+.volume input{
+    width: 94px;
 }
 
 input:focus {
@@ -150,12 +157,12 @@ span[data-value]:after {
     color: var(--text-secondary-color);
 }
 
-span.tones[data-value]:after {
+.tones[data-value]:after {
     content: attr(data-value) " т";
     left: 5px;
 }
 
-span.volume[data-value]:after {
+.volume[data-value]:after {
     content: attr(data-value) " м³";
     left: 5px;
 }
