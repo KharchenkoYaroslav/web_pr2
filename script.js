@@ -99,9 +99,9 @@ function calculate() {
     let solid_fuel = document.getElementById('solid-fuel').value;
     let oil_fuel = document.getElementById('oil-fuel').value;
     let gas_fuel = document.getElementById('natural-gas').value;
-    let solid_fuel_emount = document.getElementById('solid-fuel-input').value | 0;
-    let oil_fuel_emount = document.getElementById('oil-fuel-input').value | 0;
-    let natural_gas_emount = document.getElementById('natural-gas-input').value | 0;
+    let solid_fuel_emount = parseFloat(document.getElementById('solid-fuel-input').value) || 0;
+    let oil_fuel_emount = parseFloat(document.getElementById('oil-fuel-input').value) || 0;
+    let natural_gas_emount = parseFloat(document.getElementById('natural-gas-input').value) || 0;
 
     let solid_ktv = ((10**6)/solidFuels[solid_fuel].qri)*solid_avn*((solidFuels[solid_fuel].ar)/(100-solidFuels[solid_fuel].gvn))*(1-nzy);
     let solid_etv = (10**(-6))*solid_ktv*solidFuels[solid_fuel].qri*solid_fuel_emount;
